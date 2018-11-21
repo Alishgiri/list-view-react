@@ -1,4 +1,5 @@
-[{"id":2,"first_name":"Edan","last_name":"Prangle","email":"eprangle0@yelp.com","gender":"Male"},
+{ "data":
+    [{"id":2,"first_name":"Edan","last_name":"Prangle","email":"eprangle0@yelp.com","gender":"Male"},
 {"id":3,"first_name":"Gunar","last_name":"Neising","email":"gneising1@simplemachines.org","gender":"Male"},
 {"id":4,"first_name":"Onfre","last_name":"Tompion","email":"otompion2@vinaora.com","gender":"Male"},
 {"id":5,"first_name":"Jodee","last_name":"Dugmore","email":"jdugmore3@ucla.edu","gender":"Female"},
@@ -998,3 +999,4 @@
 {"id":999,"first_name":"Clem","last_name":"Huddy","email":"chuddyrp@wikipedia.org","gender":"Female"},
 {"id":1000,"first_name":"Dewey","last_name":"Corss","email":"dcorssrq@bravesites.com","gender":"Male"},
 {"id":1001,"first_name":"Emalia","last_name":"Finan","email":"efinanrr@tripadvisor.com","gender":"Female"}]
+}
