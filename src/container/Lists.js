@@ -60,10 +60,7 @@ class Lists extends Component {
         </header>
         <div className="huge-list">
           <div className="element" ref={element => (this.el = element)}>
-            <div
-              className="list-view"
-              // style={{ height: `${this.getHeight()}px` }}
-            >
+            <div className="list-view">
               {this.displayListsOrSpinner()}
             </div>
           </div>
