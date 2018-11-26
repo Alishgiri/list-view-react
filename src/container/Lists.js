@@ -2,7 +2,6 @@ import ReactDOM from "react-dom";
 import React, { Component } from "react";
 
 import "./Lists.css";
-import List from "../components/List-item";
 
 class Lists extends Component {
   state = {

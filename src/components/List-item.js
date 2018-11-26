@@ -14,7 +14,7 @@ class ListItem extends React.Component {
   renderList = () => {
     if (this.props.lists) {
       return (
-        <Lists lists={this.props.lists} rowHeight={130} overScanCount={5} />
+        <Lists lists={this.props.lists} rowHeight={130} overScanCount={10} />
       );
     }
     return <Spinner />;
