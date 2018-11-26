@@ -1,15 +1,43 @@
-import React from 'react';
+import React from "react";
+import { connect } from "react-redux";
 
-import './List-item.css';
+import "./List-item.css";
+import Lists from "../container/Lists";
+import * as actions from "../store/actions";
+import Spinner from "../components/UI/Spinner/Spinner";
 
-const list = props => (
-    <div className="list">
-        <div className="box">
-            <h3>{props.firstName} {props.lastName}</h3>
-            <p>{props.gender}</p>
-            <p>{props.email}</p>
-        </div>
-    </div>
-);
+class ListItem extends React.Component {
+  componentDidMount() {
+    this.props.onFetchData();
+  }
 
-export default list;
+  renderList = () => {
+    if (this.props.lists) {
+      return <Lists
+      lists={this.props.lists}
+      rowHeight={130}
+      overScanCount={5}
+      />;
+    }
+    return <Spinner />;
+  };
+
+  render = () => this.renderList()
+}
+
+const mapStateToProps = state => {
+  return {
+    lists: state.lists
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    onFetchData: () => dispatch(actions.fetchList())
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ListItem);

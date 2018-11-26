@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
 import "./App.css";
-import Lists from "./container/Lists";
+import ListItem from "./components/List-item";
 
 class App extends Component {
   render() {
     return (
-      <div className="app">
-        <Lists />
+      <div className="app-main">
+        <ListItem />
       </div>
     );
   }
