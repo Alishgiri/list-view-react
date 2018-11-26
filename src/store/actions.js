@@ -1,13 +1,14 @@
+import * as data from '../list-data';
 import Axios from "../axios-custom";
 import * as actionTypes from "./actionTypes";
 
 export const fetchList = () => {
   return dispatch => {
-    Axios.get("/data")
-      .then(res => {
-        dispatch(populateToLists(res.data));
-      })
-      .catch(error => dispatch(populateFailed()));
+  //   Axios.get("/data")
+  //     .then(res => {
+        dispatch(populateToLists(data.data));
+  //     })
+  //     .catch(error => dispatch(populateFailed()));
   };
 };
 
