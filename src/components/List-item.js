@@ -13,16 +13,14 @@ class ListItem extends React.Component {
 
   renderList = () => {
     if (this.props.lists) {
-      return <Lists
-      lists={this.props.lists}
-      rowHeight={130}
-      overScanCount={5}
-      />;
+      return (
+        <Lists lists={this.props.lists} rowHeight={130} overScanCount={5} />
+      );
     }
     return <Spinner />;
   };
 
-  render = () => this.renderList()
+  render = () => this.renderList();
 }
 
 const mapStateToProps = state => {
